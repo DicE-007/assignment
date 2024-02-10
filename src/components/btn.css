@@ -1,0 +1,17 @@
+.btn {
+    background-color: blueviolet;
+    height: 70px;
+    width: 400px;
+    display: flex;
+    border-radius: 100px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.btn-text{
+    font-size: 30px;
+    font-weight: 900;
+}
