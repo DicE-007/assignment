@@ -1,7 +1,6 @@
 import React from 'react'
 import { Person } from '../interface/interface'
 import { imageApi } from '../constants';
-import tinycolor from 'tinycolor2';
 import "./card.css";
 
 interface personDetails {
@@ -11,8 +10,6 @@ interface personDetails {
 const Card: React.FC<personDetails> = ({ person }) => {
   const { name, hair_color, gender, skin_color, vehicles } = person;
   const backgroundColor =( hair_color !== 'n/a' && hair_color!=='none') ? hair_color.split(',')[0] : 'gray';
-  const rgb = tinycolor(backgroundColor).toRgbString();
-  console.log(rgb);
   return (
     <div className={`card ${hair_color.toLowerCase() === 'black' ? 'black-text' : 'white-text'}`} style={{ backgroundColor, padding: '10px', borderRadius: '5px' }}>
       <div className='content'>
