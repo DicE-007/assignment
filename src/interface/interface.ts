@@ -43,3 +43,10 @@ export const decodePeopleResponse = (data: any): PeopleResponse => {
         }))
     };
 }
+
+export interface myContextType {
+    favCount: number;
+    favUsers: Person[];
+    selectFav: (item: Person) => void;
+    isExist:(item: Person) => boolean
+};

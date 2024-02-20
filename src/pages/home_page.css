@@ -15,6 +15,24 @@
    top:40px
     
   }
+
+  .heart-icon {
+    font-size: 32px;
+  }
+  
+  .like-text {
+    font-size: 20px; 
+  }
+  
+  .heart-icon-container {
+    cursor: pointer;
+    color: white;
+    font-size: 24px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
   
   .search-input {
     width: 300px; 
